@@ -154,7 +154,7 @@ export const experiences = [
 
   {
     id: 4,
-    type: " Hackathon",
+    type: "acheivement",
     title: "Winner Of Smart India Hackathon - 2025",
     organization: "GRIET Internal Hackathon",
     location: "GRIET",
