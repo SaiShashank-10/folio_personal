@@ -6,19 +6,19 @@ export const personalInfo = {
   role: "Software / Web Developer",
   tagline: "AI/ML Learner",
   education: "B.Tech 3rd Year @ GRIET",
-  email: "saishashank@example.com",
-  phone: "+91 9876543210",
+  email: "saishashank1006@gmail.com",
+  phone: "+91 9866012610",
   location: "Hyderabad, India",
   bio: "Passionate about crafting elegant digital solutions that bridge the gap between complex technology and intuitive user experiences. Currently diving deep into AI/ML while building full-stack applications that make a difference.",
   shortBio: "Building the future, one line of code at a time.",
-  resumeUrl: "/resume.pdf",
-  profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+  resumeUrl: "/shashh_resume.pdf",
+  profileImage: "/frontend/assets/shashank_img.png"
 };
 
 export const socialLinks = {
-  github: "https://github.com/saishashank",
-  linkedin: "https://linkedin.com/in/saishashank",
-  instagram: "https://instagram.com/saishashank",
+  github: "https://github.com/SaiShashank-10",
+  linkedin: "https://www.linkedin.com/in/vakkalanka-sai-shashank",
+  instagram: "https://instagram.com/shashhh_10",
   twitter: "https://twitter.com/saishashank"
 };
 
@@ -72,6 +72,7 @@ export const services = [
     title: "Web Development",
     description: "Creating responsive, performant websites with modern frameworks and best practices. From landing pages to complex web applications.",
     icon: "Globe",
+    image: "/image1.png",
     features: ["Responsive Design", "SEO Optimization", "Performance Tuning", "Cross-browser Compatibility"]
   },
   {
@@ -108,43 +109,69 @@ export const experiences = [
   {
     id: 1,
     type: "education",
-    title: "B.Tech in Computer Science",
-    organization: "GRIET - Gokaraju Rangaraju Institute",
+    title: "High School",
+    organization: "Genesis International School",
     location: "Hyderabad, India",
-    duration: "2022 - Present",
-    description: "Currently in 3rd year, focusing on software development, data structures, and artificial intelligence. Active member of the coding club and tech fest organizer.",
-    skills: ["Data Structures", "Algorithms", "Machine Learning", "Web Development"]
+    duration: "2011 - 2021",
+    description: "Completed my high school education from Genesis International School, Hyderabad. I scored 8.0 points in my 10th grade.",
+    skills: ["Mathematics", "Physics", "Chemistry", "English", "Hindi ", "Social Studies"]
   },
+
   {
     id: 2,
-    type: "experience",
-    title: "Full Stack Developer Intern",
-    organization: "Tech Startup XYZ",
-    location: "Remote",
-    duration: "Jun 2024 - Aug 2024",
-    description: "Developed and deployed 3 full-stack applications using React and Node.js. Implemented CI/CD pipelines and improved API response times by 40%.",
-    skills: ["React", "Node.js", "MongoDB", "Docker"]
+    type: "education",
+    title: "Intermediate Education (MPC)",
+    organization: "Sri Chaitanya Junior College",
+    location: "Hyderabad, India",
+    duration: "2021 - 2023",
+    description: "Completed 11th and 12th standard in the MPC (Maths, Physics, Chemistry) stream and achieved 95.4% in the Telangana State Board Intermediate Public Examination.",
+    skills: ["Physics", "Chemistry", "Maths", "Time Management", "Problem Solving"]
   },
+
+
   {
     id: 3,
-    type: "experience",
-    title: "Frontend Developer",
-    organization: "Freelance Projects",
-    location: "Remote",
+    type: "education",
+    title: "B.Tech in Computer Science & Engineering",
+    organization: "GRIET - Gokaraju Rangaraju Institute of Engineering and Technology",
+    location: "Hyderabad, India",
     duration: "2023 - Present",
-    description: "Built 10+ responsive websites for clients across various industries. Specialized in React, Next.js, and modern CSS frameworks.",
-    skills: ["React", "Next.js", "Tailwind CSS", "Framer Motion"]
+    description: "Pursuing 3rd year B.Tech in CSE with focus on software development, DSA, ML, and full-stack web development. Active in coding clubs, tech fests, and hackathons, contributing to projects and event organization. ",
+    skills: ["DSA", "Full Stack", "AIML", "Database", "Algorithms"]
   },
+
+
   {
     id: 4,
-    type: "achievement",
-    title: "Hackathon Winner",
-    organization: "National Level Coding Competition",
-    location: "Bangalore",
-    duration: "Mar 2024",
-    description: "Won first place among 200+ teams for developing an AI-powered accessibility tool. The project was recognized for its innovative approach to inclusive design.",
-    skills: ["Python", "AI/ML", "Team Leadership", "Problem Solving"]
-  }
+    type: "experience",
+    title: "Full Stack Developer Intern",
+    organization: "S Hatch",
+    location: "Hybrid",
+    duration: "Sep 2024 - Present",
+    description: "Working as a Full Stack Developer Intern, building and maintaining React + Node.js applications. Contributed to developing and deploying multiple full-stack projects, optimized API performance, and collaborated with teams on feature development and UI enhancements.",
+    skills: ["React", "Node.js", "MongoDB", "GSAP", "Landing Pages"]
+  },
+
+  {
+    id: 4,
+    type: " Hackathon",
+    title: "Winner Of Smart India Hackathon - 2025",
+    organization: "GRIET Internal Hackathon",
+    location: "GRIET",
+    duration: "23rd September, 2025",
+    description: "Developed an AIML-based full-stack solution for SIH problem statement SIH25010 – Smart Crop Advisory System for Small & Marginal Farmers. Built with React, Next.js, Tailwind, and Framer Motion. Won the GRIET Internal Hackathon and selected to represent the institute for SIH 2025.",
+    skills: ["React", "Next.js", "Python", "ML Modals", "API's"]
+  },
+  // {
+  //   id: 6,
+  //   type: "achievement",
+  //   title: "Hackathon Winner",
+  //   organization: "National Level Coding Competition",
+  //   location: "Bangalore",
+  //   duration: "Mar 2024",
+  //   description: "Won first place among 200+ teams for developing an AI-powered accessibility tool. The project was recognized for its innovative approach to inclusive design.",
+  //   skills: ["Python", "AI/ML", "Team Leadership", "Problem Solving"]
+  // }
 ];
 
 export const projects = [

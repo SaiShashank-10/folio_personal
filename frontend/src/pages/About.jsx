@@ -50,11 +50,18 @@ const About = () => {
             {/* Image */}
             <ScrollReveal direction="left">
               <div className="relative">
+              {/* <div className="image-wrapper rounded-2xl overflow-hidden shadow-2xl">
+                  <img
+                      src="/passimg.jpeg"
+                      alt={personalInfo.name}
+                      className="w-full h-full object-cover transition-all duration-700 image-content"
+                />
+</div> */}
                 <div className="aspect-[4/5] rounded-2xl overflow-hidden">
                   <img
-                    src={personalInfo.profileImage}
+                    src="/passimg.jpeg"
                     alt={personalInfo.name}
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                    className="w-full h-full object-cover grayscale hover:grayscale-0 hover:scale-105 hover:brightness-110 transition-all duration-700"
                   />
                 </div>
                 {/* Decorative elements */}

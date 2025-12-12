@@ -2,7 +2,19 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
-import { ArrowDown, Github, Linkedin, Instagram, Download, Sparkles } from 'lucide-react';
+import {
+  ArrowDown,
+  Github,
+  Linkedin,
+  Instagram,
+  Download,
+  Sparkles,
+  Rocket,
+  Code2,
+  Palette,
+  Terminal,
+  Atom,
+} from 'lucide-react';
 import { personalInfo, socialLinks, stats } from '../../data/mock';
 import { Button } from '../ui/button';
 import AnimatedText from '../animations/AnimatedText';
@@ -12,6 +24,13 @@ import StatCounter from '../animations/StatCounter';
 const HeroSection = () => {
   const heroRef = useRef(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const floatingBadges = [
+    { label: 'Open to Work', icon: Rocket, position: '-top-7 left-1/2 -translate-x-1/2' },
+    { label: 'HTML & CSS', icon: Palette, position: 'top-8 -right-10' },
+    { label: 'JavaScript', icon: Code2, position: 'bottom-10 -right-6' },
+    { label: 'React', icon: Atom, position: 'top-8 -left-10' },
+    { label: 'Problem Solver', icon: Terminal, position: 'bottom-6 left-1/2 -translate-x-1/2' },
+  ];
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -83,7 +102,7 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-tight text-black dark:text-white">
               <AnimatedText text="Hi, I'm" delay={0.2} />
               <br />
-              <span className="font-normal">
+              <span className="font-normal glare-text">
                 <AnimatedText text={personalInfo.name.split(' ').slice(0, 2).join(' ')} delay={0.4} />
               </span>
             </h1>
@@ -120,13 +139,13 @@ const HeroSection = () => {
                   Hire Me
                 </Button>
               </Link>
-              <a href={personalInfo.resumeUrl} download>
+              <a href="/shashh_resume.pdf" download>
                 <Button
                   variant="outline"
                   className="border-neutral-300 dark:border-neutral-700 text-black dark:text-white hover:bg-neutral-100 dark:hover:bg-neutral-900 rounded-full px-8 py-6 text-base font-light transition-all duration-300"
                 >
                   <Download className="w-4 h-4 mr-2" />
-                  Download Resume
+                  <span className="glare-text">Download Resume</span>
                 </Button>
               </a>
               <Link to="/projects">
@@ -174,13 +193,35 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="order-1 lg:order-2 flex justify-center"
           >
-            <RotatingBorder className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-              <img
-                src={personalInfo.profileImage}
-                alt={personalInfo.name}
-                className="w-full h-full object-cover"
-              />
-            </RotatingBorder>
+            <div className="relative">
+              <RotatingBorder className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+                <img
+                  src="/shashank_img.png"
+                  alt={personalInfo.name}
+                  className="w-full h-full object-cover"
+                />
+              </RotatingBorder>
+
+              {floatingBadges.map((badge, index) => (
+                <motion.div
+                  key={badge.label}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1, y: [-6, 6, -6] }}
+                  transition={{
+                    duration: 3.2,
+                    delay: 0.15 * index,
+                    repeat: Infinity,
+                    repeatType: 'mirror',
+                  }}
+                  className={`absolute ${badge.position} z-20`}
+                >
+                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/90 dark:bg-black/80 text-xs font-medium text-black dark:text-white shadow-sm border border-neutral-200 dark:border-neutral-800 backdrop-blur">
+                    <badge.icon className="w-4 h-4" />
+                    <span>{badge.label}</span>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
 

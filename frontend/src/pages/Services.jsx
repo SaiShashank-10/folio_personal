@@ -141,6 +141,7 @@ const Services = () => {
                         
                         {/* Icon */}
                         <Icon className="w-24 h-24 text-neutral-300 dark:text-neutral-700 group-hover:text-black dark:group-hover:text-white transition-colors duration-500" />
+                        {/* <img src= "/image1.png" alt= "Web Dev" className="w-full h-full object-cover" /> */}
                         
                         {/* Service number */}
                         <div className="absolute bottom-4 right-4">

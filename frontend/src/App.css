@@ -32,3 +32,82 @@
         transform: rotate(360deg);
     }
 }
+
+/* Glare animation for CTA text */
+.glare-text {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(120deg, rgba(255,255,255,0.15), rgba(255,255,255,0.8), rgba(255,255,255,0.15));
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: glare-shift 2.5s ease-in-out infinite;
+}
+
+@keyframes glare-shift {
+    0% {
+        background-position: 120% 0%;
+    }
+    50% {
+        background-position: -20% 100%;
+    }
+    100% {
+        background-position: 120% 0%;
+    }
+}
+
+.name-gleam {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(120deg, #00ffd5, #ffffff, #d4f1ff);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: name-gleam-shift 2.5s ease-in-out infinite;
+}
+
+@keyframes name-gleam-shift {
+    0% {
+        background-position: 120% 0%;
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.55));
+    }
+    50% {
+        background-position: -20% 100%;
+        filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.85));
+    }
+    100% {
+        background-position: 120% 0%;
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.55));
+    }
+}
+
+
+/* Animated gradient highlight for name */
+/* .name-gleam {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(120deg, #f6f7fb, #d9dde3, #f6f7fb);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: name-gleam-shift 3.5s ease-in-out infinite;
+}
+
+@keyframes name-gleam-shift {
+    0% {
+        background-position: 120% 0%;
+        filter: drop-shadow(0 0 4px rgba(230, 236, 243, 0.25));
+    }
+    50% {
+        background-position: -20% 100%;
+        filter: drop-shadow(0 0 8px rgba(199, 203, 206, 0.35));
+    }
+    100% {
+        background-position: 120% 0%;
+        filter: drop-shadow(0 0 4px rgba(230, 236, 243, 0.25));
+    }
+} */
+
