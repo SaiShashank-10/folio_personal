@@ -1,6 +1,7 @@
 {
+    "version": 2,
+    "framework": null,
     "buildCommand": "yarn build",
-    "outputDirectory": "build",
-    "framework": "create-react-app"
+    "outputDirectory": "build"
   }
   
